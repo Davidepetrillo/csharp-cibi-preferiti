@@ -1,24 +1,24 @@
 ﻿// See https://aka.ms/new-console-template for more information
-string[] arrayDeiMieiCibiPreferiti = { "Pizza", "Sushi", "Gelato", "Hamburger", "Cioccolato", "Pollo", "Yogurt", "Formaggio" };
-Console.WriteLine("La lunghezza dell'array è : " + arrayDeiMieiCibiPreferiti.Length);
+string[] classificaDeiMieiCibiPreferiti = { "Pizza", "Sushi", "Gelato", "Hamburger", "Cioccolato", "Pollo", "Yogurt", "Formaggio" };
+Console.WriteLine($"Nella seguente classifica abbiamo: {classificaDeiMieiCibiPreferiti.Length} posizioni");
 
-for (int i = 0; i < arrayDeiMieiCibiPreferiti.Length; i++)
+for (int i = 0; i < classificaDeiMieiCibiPreferiti.Length; i++)
 {
-Console.WriteLine($"Alla posizione {i+1} troviamo: {arrayDeiMieiCibiPreferiti[i]}");
+Console.WriteLine($"Alla posizione {i+1} troviamo: {classificaDeiMieiCibiPreferiti[i]}");
 
 }
 
-var primaPoszione = arrayDeiMieiCibiPreferiti[0];
-var ultimaPosizione = arrayDeiMieiCibiPreferiti[arrayDeiMieiCibiPreferiti.Length - 1];
+var primaPoszione = classificaDeiMieiCibiPreferiti[0];
+var ultimaPosizione = classificaDeiMieiCibiPreferiti[classificaDeiMieiCibiPreferiti.Length - 1];
 Console.WriteLine("Il cibo nella prima posizione è : " + primaPoszione);
 Console.WriteLine("Il cibo nell'ultima posizione è : " + ultimaPosizione);
 
-var mediana = arrayDeiMieiCibiPreferiti[arrayDeiMieiCibiPreferiti.Length / 2];
-var mediana2 = arrayDeiMieiCibiPreferiti[(arrayDeiMieiCibiPreferiti.Length / 2) - 1];
+var mediana = classificaDeiMieiCibiPreferiti[classificaDeiMieiCibiPreferiti.Length / 2];
+var medianaCasoPari = classificaDeiMieiCibiPreferiti[(classificaDeiMieiCibiPreferiti.Length / 2) - 1];
 
-if (arrayDeiMieiCibiPreferiti.Length %2 == 0)
+if (classificaDeiMieiCibiPreferiti.Length %2 == 0)
 {
-    Console.WriteLine($"I cibi nella posizione centrale della classifica sono: {mediana} e {mediana2}");
+    Console.WriteLine($"I cibi nella posizione centrale della classifica sono: {mediana} e {medianaCasoPari}");
 }
 else
 {
