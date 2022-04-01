@@ -14,11 +14,11 @@ Console.WriteLine("Il cibo nella prima posizione è : " + primaPoszione);
 Console.WriteLine("Il cibo nell'ultima posizione è : " + ultimaPosizione);
 
 var mediana = classificaDeiMieiCibiPreferiti[classificaDeiMieiCibiPreferiti.Length / 2];
-var medianaCasoPari = classificaDeiMieiCibiPreferiti[(classificaDeiMieiCibiPreferiti.Length / 2) - 1];
+var secondaMedianaCasoPari = classificaDeiMieiCibiPreferiti[(classificaDeiMieiCibiPreferiti.Length / 2) - 1];
 
 if (classificaDeiMieiCibiPreferiti.Length %2 == 0)
 {
-    Console.WriteLine($"I cibi nella posizione centrale della classifica sono: {mediana} e {medianaCasoPari}");
+    Console.WriteLine($"I cibi nella posizione centrale della classifica sono: {mediana} e {secondaMedianaCasoPari}");
 }
 else
 {
